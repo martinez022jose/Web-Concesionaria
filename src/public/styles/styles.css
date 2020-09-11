@@ -1,4 +1,4 @@
-.blackColor{
+.colorBlack{
     color:black;
 }
 
@@ -38,7 +38,25 @@
     color:black;
 }
 
+.bgRed{
+    background: red;
+}
 
+.absoluteClassLB{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.fontG{
+    font-size: 20px;
+}
+
+.absoluteCenter{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
 /*Styles aboutUs*/
 .borderAbout{
     margin: auto; 

@@ -17,23 +17,90 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
+<body class="bg-ligth">
     <%- include('./parts/nav.html'); %>
 
-    <div class="container-fluid">
+    <!--Comienzo Slider-->
+    <section class="container-fluid mb-5">
         <div class="row">
-            <div class="col-lg-12">
-                <img src="imagenes/aboutUs/foto1.jpg" class="img-fluid">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste esse illum saepe sit suscipit fuga quas sapiente totam ipsam, asperiores assumenda accusamus dignissimos, blanditiis dolore doloribus enim quidem magni?</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="/imagenes/slider1.jpg" style="height: 700px;">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="bg-light colorBlack rounded p-2 text-justify" style="width: 40%;">Lorem ipsum dolor sit amet.</h2>
+
+                        <p class="text-justify text-light" style="width: 30%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed quaerat dolores dolor nostrum officiis odit, dolorem iusto eius odio recusandae vero placeat</p>
+
+                        <a class="btn btn-warning float-left px-5" href="#holaChiques">Leer..</a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item relativeClass">
+                    <img class="d-block w-100 img-fluid" src="/imagenes/slider2.jpg" style="height: 700px;">
+                  </div>
+
+                  <div class="carousel-item relativeClass">
+                    <img class="d-block w-100 img-fluid" src="/imagenes/slider3.jpg" style="height: 700px;">
+
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon display-4" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon display-4" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </section>
+    <!--Fin Slider-->
+
+    <!--Sec info-->
+    <section class="container text-center">
+            <div class="row mb-4">
+                <div class="col-8">
+                    <img class="img-fluid relativeClass" src="/imagenes/new1.jpg">
+                    <p class="fontG absoluteClassLB rounded bg-warning ml-4 p-1" style="width: 70%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                </div>
+                <div class="col-4">
+                    <h1 class="pb-4">Lorem ipsum dolor sit</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
+                    <a class="btn btn-warning px-5 float-left" href="#Leer">Leer..</a>
+                </div>
             </div>
 
-            
-
-        </div>
-
-    </div>
-    <h1>Esto es boca</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-fluid" src="/imagenes/new1.jpg" style="height:300px;">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid"  src="/imagenes/new2.jpg" style="height:300px;">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid" src="/imagenes/new3.jpg" style="height:300px;">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
+                </div>
+              
+            </div>
+           
+        </section>
+        <!--Fin Sec info-->
+    
+    
 
     <%- include('./parts/footer.html'); %>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
