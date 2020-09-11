@@ -16,13 +16,50 @@
      <!--CSS-->
      <link rel='stylesheet' type='text/css' media='screen' href='/styles/styles.css'>
      <!--Fin CSS-->
-     
+
     <script src='main.js'></script>
 </head>
 <body>
     <%- include('./parts/nav.html');%>
+    
+    <div class="container-fluid">
+        <div class="row relativeClass">
+            <img src="/imagenes/contact.jpg"  class="img-fluid" style="height: 600px; width:100%;">  
+        </div>
+    </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis adipisci provident aut rerum magni, placeat sint explicabo molestiae veniam dolore inventore aperiam veritatis vero delectus eaque, quidem officiis dolorem maxime facilis. Quis, repellendus nobis, tenetur dolorum veritatis pariatur tempora architecto temporibus repellat officia incidunt, praesentium repudiandae ea odit molestias tempore esse sapiente sequi. Cupiditate totam cum quam quia debitis eligendi odio. Deserunt corrupti autem dicta vitae facilis unde eveniet nobis in, fugiat repellat at dolorum quisquam nulla obcaecati magni accusantium asperiores. Minus dolore soluta quod similique explicabo odio reprehenderit aperiam! Facilis nemo quis magnam doloremque delectus autem alias minus! Illum soluta ab distinctio architecto iusto, iste minima rerum deserunt ipsa perferendis dicta blanditiis? Accusamus totam sequi aperiam ea rerum dicta, facere, laborum temporibus iusto non sunt assumenda. Dicta vel ducimus pariatur eaque exercitationem, recusandae id, debitis ipsum quod corrupti delectus, numquam accusamus harum est quo assumenda consequatur doloribus neque voluptates molestias. Culpa nobis voluptates suscipit facilis id placeat voluptas iste sed. Quod harum molestias architecto minus ipsam odit obcaecati iure. Ullam ratione, animi cumque facilis odio sunt ea excepturi natus mollitia vitae doloribus autem quae dolore? Fuga consequuntur molestiae atque ipsum quam totam tempore? Veritatis sit quaerat, sapiente voluptas cumque provident eveniet labore consectetur repellendus officiis distinctio. Sapiente beatae in molestias eaque omnis voluptas ad. Praesentium amet eveniet tenetur corporis voluptate sequi soluta quis, unde recusandae ipsum odio cupiditate, accusantium illo? Laudantium ab vel aliquid. Distinctio perspiciatis error vitae aliquid! Numquam sunt dicta aut consectetur, iste magnam qui tempore ut fugiat, repellat suscipit dolorum! Reprehenderit obcaecati beatae quo? Deleniti repellendus facilis facere eos. Culpa reiciendis et perferendis quisquam ut enim laboriosam officiis blanditiis quia ea. Neque modi commodi dolorum dignissimos illo hic consequuntur aliquam quasi harum numquam soluta vel distinctio dolores aspernatur tempora animi quod velit, reiciendis vitae aliquid. Odit praesentium repellat commodi cumque reprehenderit esse ducimus atque perspiciatis fugiat consequuntur iusto obcaecati at optio beatae impedit distinctio deserunt minima eaque, ad possimus assumenda doloribus totam? Tenetur, odit sint culpa magni error neque sed deserunt suscipit fugiat minima nisi ut assumenda dolorum quaerat numquam eum. Odio deleniti autem, est quia mollitia qui laborum, excepturi beatae ipsa neque quae nisi. Est aliquid rerum esse aut veniam, animi labore reiciendis ratione, eveniet, placeat accusantium dolorum nesciunt! Quibusdam itaque expedita sequi tenetur. Odio aspernatur amet ipsa necessitatibus eos id quod praesentium totam quidem labore nesciunt, nulla minus ratione. Doloremque sapiente dolorem ad, ipsa, veritatis neque magni eaque soluta iusto tempora animi. Adipisci sed, rerum, harum quod a laborum enim commodi inventore quisquam natus consequuntur beatae dolorem odit hic quos aliquid quia nesciunt voluptates possimus molestias tempora numquam. Ratione laborum veniam nihil, beatae, inventore nesciunt laboriosam maiores unde delectus numquam adipisci autem rerum eum neque pariatur explicabo iusto, ab provident repellendus illum animi doloribus soluta accusantium velit? Officia dolorum, perferendis sit in maiores vero quam? Iusto alias esse, mollitia tempore beatae ad incidunt dignissimos fuga neque sint quos hic autem est placeat! Earum iste culpa beatae possimus quasi libero a nesciunt explicabo facere.</p>
+    <div class="container-fluid p-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="pb-5">Lorem, ipsum dolor sit amet</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit iste qui libero doloribus dolorum blanditiis voluptatum consequatur necessitatibus consequuntur culpa possimus animi sit sed quia eum dolore, repellendus, commodi non.</p>
+                </div>
+                <div class="col-6">
+                    <h2 class="pb-3 text-center">Contacto</h2>
+                    <form method="POST" action="#"></form>
+                        <div class="form-group">
+                          <label>Nombre/s: </label>
+                          <input type="text" class="form-control" placeholder="Ingrese Nombre Completo">
+                        </div>
+                        <div class="form-group">
+                          <label>Apellido/s: </label>
+                          <input type="text" class="form-control" placeholder="Ingrese Nombre Completo">
+                        </div>
+                        <div class="form-group">
+                          <label>Email : </label>
+                          <input type="mail" class="form-control" placeholder="ejemplo@correro.com.ar">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" placeholder="Realizar Comentario"></textarea>
+                        </div>
+                        <button class="btn btn-success btn-block p-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <%- include('./parts/footer.html')%>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
