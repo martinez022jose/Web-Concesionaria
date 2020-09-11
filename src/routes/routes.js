@@ -9,4 +9,8 @@ router.get('/contact', (req, res) => {
     res.render('contact.html',{ title :'Pagina secundaria'});
 });
 
+router.get('/aboutUs',(req,res) => {
+    res.render('aboutUs.html',{ title : 'Pagina Terceria'})
+})
+
 module.exports = router;

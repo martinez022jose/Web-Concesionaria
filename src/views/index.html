@@ -9,7 +9,7 @@
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <!-- Fin Bootstrap Css -->
-     <link rel='stylesheet' type='text/css' href="/src/styles/styles.css">
+     <link rel='stylesheet' type='text/css' href="/styles/styles.css">
      <!--Fontawesome Script-->
      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
      <!--Fin Fontawesome-->
@@ -18,12 +18,24 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <%- include('./parts/nav.html')%>
+    <%- include('./parts/nav.html'); %>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="imagenes/aboutUs/foto1.jpg" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste esse illum saepe sit suscipit fuga quas sapiente totam ipsam, asperiores assumenda accusamus dignissimos, blanditiis dolore doloribus enim quidem magni?</p>
+            </div>
+
+            
+
+        </div>
+
+    </div>
     <h1>Esto es boca</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
 
-    <%- include('./parts/footer.html')%>
+    <%- include('./parts/footer.html'); %>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

@@ -1,0 +1,54 @@
+.blackColor{
+    color:black;
+}
+
+.bgBlack{
+    background: black;
+}
+
+.bgOrange{
+    background: orange;
+}
+
+.fontNav{
+    font-size: 20px;
+}
+
+.bgTransparent{
+    background: rgba(32, 28, 6, 0.9);
+}
+
+.colorWhite{
+    color:white;
+}
+
+.sizeSec{
+    font-size: 50px;
+}
+
+.sizeIcon{
+    font-size: 30px;
+}
+
+.colorFooterTitle{
+    color:black;
+}
+
+/*Styles de aboutUs*/
+.borderAbout{
+    margin: auto; 
+    border-radius: 50px; 
+    width: 50%; 
+    height: 10px; 
+    border-bottom: 10px solid orange;
+}
+
+.relativeClass{
+    position: relative;
+}
+
+.absoluteClass{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
