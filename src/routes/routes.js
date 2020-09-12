@@ -10,7 +10,11 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/aboutUs',(req,res) => {
-    res.render('aboutUs.html',{ title : 'Pagina Terceria'})
-})
+    res.render('aboutUs.html',{ title : 'Pagina Terceria'});
+});
+
+router.get('/opportunities',(req, res) => {
+    res.render('opportunities.html', {title : 'Pagina x'});
+});
 
 module.exports = router;
