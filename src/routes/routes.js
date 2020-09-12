@@ -2,19 +2,19 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('index.html',{ title :'Pagina principal'});
+    res.render('index.html',{ title : 'index'});
 });
 
 router.get('/contact', (req, res) => {
-    res.render('contact.html',{ title :'Pagina secundaria'});
+    res.render('contact.html',{ title : 'Contact'});
 });
 
 router.get('/aboutUs',(req,res) => {
-    res.render('aboutUs.html',{ title : 'Pagina Terceria'});
+    res.render('aboutUs.html',{ title : 'aboutUs'});
 });
 
 router.get('/opportunities',(req, res) => {
-    res.render('opportunities.html', {title : 'Pagina x'});
+    res.render('opportunities.html', {title : 'opportunities'});
 });
 
 module.exports = router;
