@@ -2,6 +2,15 @@
     color:black;
 }
 
+.zoom:hover{
+    /* tranformamos el elemento al pasar el mouse por encima con scale(1.2). */
+    transition: 0.3s; /*Time*/
+    transform : scale(2);
+    -moz-transform : scale(2); /* Firefox */
+    -webkit-transform : scale(1.2); /* Chrome - Safari */
+    -o-transform : scale(2); /* Opera */
+}
+
 .bgBlack{
     background: black;
 }
