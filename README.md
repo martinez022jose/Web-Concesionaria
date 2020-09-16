@@ -12,15 +12,18 @@ Para poder correr el programa se requiere previamente:
 <a href="https://nodejs.org/es/">Descarga Aqui</a>
 
 ## Ejecutando las pruebas :memo:
+> Home 
+<img height="1000px" width="600px" scale="50%" src="https://github.com/martinez022jose/Web-Concesionaria/blob/master/screenShotsReadMe/home.png"/>
 
+>AboutUs
+<img height="800px" width="600px" scale="50%" src="https://github.com/martinez022jose/Web-Concesionaria/blob/master/screenShotsReadMe/aboutUs.png"/>
 
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/home.PNG"/>
+>Opp
+<img height="800px" width="600px" scale="50%" src="https://github.com/martinez022jose/Web-Concesionaria/blob/master/screenShotsReadMe/opp.png"/>
+
+>Contact
+<img height="800px" width="1000px" scale="50%" src="https://github.com/martinez022jose/Web-Concesionaria/blob/master/screenShotsReadMe/contact.png"/>
                                                                                                                                               
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/aboutUs.png"/>
-
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/contact.png">
-
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/opp.png">
 
 ## Autor/Autores :pushpin:
 * **Jose Martinez Gutierrez**
