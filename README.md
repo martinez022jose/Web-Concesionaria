@@ -9,8 +9,6 @@ Para poder correr el programa se requiere previamente:
 * Express.Js
 * Ejs
 
-<a href="https://nodejs.org/es/">Descarga Aqui</a>
-
 ## Ejecutando las pruebas :memo:
 > Home 
 <img height="1000px" width="600px" scale="50%" src="https://github.com/martinez022jose/Web-Concesionaria/blob/master/screenShotsReadMe/home.png"/>
