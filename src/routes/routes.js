@@ -27,19 +27,19 @@ router.post('/send-email', urlencodedParser, async (req, res) => {
     const texto = req.body.texto;
 
    
-    var transporter = nodemailer.createTransport('SMTP', {
-        service: 'Gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
+    var transporter = nodemailer.createTransport("SMTP", {
+        service: "Gmail", //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
         auth: {
-          user: 'martinez022jose@gmail.com',
-          pass: 'mataderos32'
+          user: "martinez022jose@gmail.com",
+          pass: "mataderos32"
         },
       });
       
     var mailOptions = {
-        from: 'martinez022jose <martinez022jose@gmail.com>',
-        to: email,
-        subject: 'chiques',
-        text: 'hola todes'
+        from: "martinez022jose <martinez022jose@gmail.com>",
+        to: req.body.email,
+        subject: "chiques",
+        text: "hola todes"
     }
 
     await transporter.sendMail(mailOptions, (error,respuesta) => {
