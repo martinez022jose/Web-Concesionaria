@@ -20,7 +20,7 @@ router.get('/opportunities',(req, res) => {
     res.render('../views/opportunities.html', {title : 'Opportunities'});
 });
 
-router.post('/sendMail', urlencodedParser, (req, res) => {
+router.post('/sendMail', urlencodedParser, async (req, res) => {
     const nombre = req.body.nombre;
     const email = req.body.email;
     const mensaje = req.body.mensaje;
@@ -40,7 +40,7 @@ router.post('/sendMail', urlencodedParser, (req, res) => {
         text: 'hola todes'
     }
 
-    transporter.sendMail(mailOptions, (error,respuesta) => {
+    await transporter.sendMail(mailOptions, (error,respuesta) => {
         if(error){
             console.log(error);
         }else{
