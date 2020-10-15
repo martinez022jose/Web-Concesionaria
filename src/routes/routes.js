@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 router.get('/', (req, res) => {
     res.render('../views/index.html',{ title : 'Home'});
@@ -18,7 +20,7 @@ router.get('/opportunities',(req, res) => {
     res.render('../views/opportunities.html', {title : 'Opportunities'});
 });
 
-router.post('/sendMail', (req, res) => {
+router.post('/sendMail', urlencodedParser, (req, res) => {
     const nombre = req.body.nombre;
     const email = req.body.email;
     const mensaje = req.body.mensaje;
