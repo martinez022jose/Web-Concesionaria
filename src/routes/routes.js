@@ -26,7 +26,8 @@ router.post('/send-email', urlencodedParser, async (req, res) => {
     const email = req.body.email;
     const texto = req.body.texto;
 
-    
+    var transporter = nodemailer.createTransport(mg(auth));
+    /*
     var transporter = nodemailer.createTransport('SMTP', {
         service: 'gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
         auth: {
@@ -34,7 +35,7 @@ router.post('/send-email', urlencodedParser, async (req, res) => {
           pass: 'mataderos22'
         },
       });
-      
+      */
     var mailOptions = {
         from: email,
         to: 'martinez022jose@gmail.com',
