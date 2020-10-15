@@ -4,7 +4,7 @@ const ex = express();
 const path = require('path');
 
 //Settings
-ex.set('port', 5000 || process.env.PORT); //Especificamos uso de port
+ex.set('port', process.env.PORT || 5000); //Especificamos uso de port
 ex.set('views', path.join(__dirname, 'views')); // Especificamos ruta de views
 ex.engine('html', require('ejs').renderFile); //Modificamos uso de extension html
 ex.set('view engine', 'ejs'); //Especificamos uso de motor de plantillas ejs
