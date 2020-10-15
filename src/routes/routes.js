@@ -31,7 +31,7 @@ router.post('/send-email', urlencodedParser, async (req, res) => {
         service: 'Gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
         auth: {
           user: 'martinez022jose@gmail.com',
-          pass: 'mataderos22'
+          pass: 'mataderos32'
         },
       });
       
