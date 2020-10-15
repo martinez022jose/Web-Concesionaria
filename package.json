@@ -19,7 +19,8 @@
   "homepage": "https://github.com/martinez022jose/Web-Concesionaria#readme",
   "dependencies": {
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.14"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
