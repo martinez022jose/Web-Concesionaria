@@ -23,7 +23,7 @@ router.post('/sendMail', (req, res) => {
     const email = req.body.email;
     const mensaje = req.body.mensaje;
 
-    const transporter = nodemailer.createTransport('SMTP', {
+    var transporter = nodemailer.createTransport('SMTP', {
         service: 'Gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
         auth: {
           user: 'martinez022jose@gmail.com',
@@ -31,12 +31,13 @@ router.post('/sendMail', (req, res) => {
         },
       });
       
-    const mailOptions = {
-        from: 'jose',
-        to: 'unmail',
+    var mailOptions = {
+        from: email,
+        to: 'martinez022jose@gmail.com',
         subject: 'chiques',
         text: 'hola todes'
     }
+
     transporter.sendMail(mailOptions, (error,respuesta) => {
         if(error){
             console.log(error);
