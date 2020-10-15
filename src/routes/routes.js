@@ -18,13 +18,13 @@ router.get('/opportunities',(req, res) => {
     res.render('../views/opportunities.html', {title : 'Opportunities'});
 });
 
-router.post('/sendMail', async (req, res) => {
+router.post('/sendMail', (req, res) => {
     const nombre = req.body.nombre;
     const email = req.body.email;
     const mensaje = req.body.mensaje;
 
     const transporter = nodemailer.createTransport('SMTP', {
-        service: 'gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
+        service: 'Gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
         auth: {
           user: 'martinez022jose@gmail.com',
           pass: 'mataderos22'
