@@ -20,13 +20,15 @@ router.get('/opportunities',(req, res) => {
     res.render('../views/opportunities.html', {title : 'Opportunities'});
 });
 
-router.post('/sendMail', urlencodedParser, async (req, res) => {
+router.post('/send-email', urlencodedParser, (req, res) => {
     const nombre = req.body.nombre;
+    const apellido = req.body.apellido;
     const email = req.body.email;
-    const mensaje = req.body.mensaje;
+    const texto = req.body.texto;
 
+    
     var transporter = nodemailer.createTransport('SMTP', {
-        service: 'Gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
+        service: 'gmail', //al usar un servicio bien conocido, no es necesario proveer un nombre de servidor.
         auth: {
           user: 'martinez022jose@gmail.com',
           pass: 'mataderos22'
@@ -40,7 +42,7 @@ router.post('/sendMail', urlencodedParser, async (req, res) => {
         text: 'hola todes'
     }
 
-    await transporter.sendMail(mailOptions, (error,respuesta) => {
+    transporter.sendMail(mailOptions, (error,respuesta) => {
         if(error){
             console.log(error);
         }else{

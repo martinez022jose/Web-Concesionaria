@@ -31,23 +31,23 @@
                 </div>
                 <div class="col-6">
                     <h2 class="pb-3 text-center">Contacto</h2>
-                    <form method="POST" action="/sendMail"></form>
+                    <form action="/send-email" method="POST" >
                         <div class="form-group">
                           <label>Nombre/s: </label>
-                          <input type="text" class="form-control" placeholder="Ingrese Nombre Completo">
+                          <input type="text" class="form-control" name="nombre" placeholder="Ingrese Nombre Completo">
                         </div>
                         <div class="form-group">
                           <label>Apellido/s: </label>
-                          <input type="text" class="form-control" placeholder="Ingrese Nombre Completo">
+                          <input type="text" class="form-control" name="apellido" placeholder="Ingrese Nombre Completo">
                         </div>
                         <div class="form-group">
                           <label>Email : </label>
-                          <input type="mail" class="form-control" placeholder="ejemplo@correro.com.ar">
+                          <input type="mail" class="form-control" name="email" placeholder="ejemplo@correro.com.ar">
                         </div>
                         <div class="form-group">
-                          <textarea class="form-control" placeholder="Realizar Comentario"></textarea>
+                          <textarea class="form-control" name="texto" placeholder="Realizar Comentario"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block p-3">Enviar</button>
+                        <button class="btn btn-success btn-block p-3">Enviar</button>
                     </form>
                 </div>
             </div>
