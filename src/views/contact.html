@@ -10,27 +10,27 @@
 <body>
     <%- include('./parts/nav.html');%>
     
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="row relativeClass">
-            <img src="/imagenes/contact/contact.jpg"  class="img-fluid" style="height: 600px; width:100%;"> 
-            <di class="absoluteClass m-4 bg-light rounded p-4 colorBlack animated lightSpeedIn delay-5s"  style="width: 40%;">
-                <h1 class="mb-4">Lorem, ipsum dolor sit amet</h1>
-                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit iste qui libero doloribus dolorum blanditiis voluptatum consequatur necessitatibus consequuntur culpa possimus animi sit sed quia eum dolore, repellendus, commodi non.
+            <img src="/imagenes/contact/contact.jpg"  class="img-fluid"> 
+            <di class="absoluteClass m-4 bg-light rounded p-4 colorBlack animated lightSpeedIn delay-5s widthRef">
+                <h1 class="mb-4 refTitulo">Lorem, ipsum dolor sit amet</h1>
+                <p class="text-justify refSubTitulo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit iste qui libero doloribus dolorum blanditiis voluptatum consequatur necessitatibus consequuntur culpa possimus animi sit sed quia eum dolore, repellendus, commodi non.
                 </p> 
-                <a class="btn btn-success float-left px-5" href="#def">Leer..</a>
+                <a class="btn btn-success float-left px-3 refSubTitulo" href="#def">Leer..</a>
             </di>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid p-5 bg-light" id="def">
+    <section class="container-fluid p-5 bg-light" id="def">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <h1 class="pb-5">Lorem, ipsum dolor sit amet</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit iste qui libero doloribus dolorum blanditiis voluptatum consequatur necessitatibus consequuntur culpa possimus animi sit sed quia eum dolore, repellendus, commodi non.</p>
                 </div>
-                <div class="col-6">
-                    <h2 class="pb-3 text-center">Contacto</h2>
+                <div class="col-lg-6">
+                    <h2 class="pb-3 text-center mb-5">Contacto</h2>
                     <form action="/send-email" method="POST" >
                         <div class="form-group">
                           <label>Nombre/s: </label>
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <%- include('./parts/footer.html')%>
 </body>

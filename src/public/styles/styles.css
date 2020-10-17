@@ -89,7 +89,18 @@
     left: 0;
 }
 
+/*Definimos las media queris*/
 
+@media(min-width:1024px){
+    section .imgLimit{
+        height: 700px;
+    }
+
+    section .widthRef{
+        width: 40%;
+    }
+
+}
 
 @media(max-width:340px){
     section .columnAbout{
@@ -99,11 +110,22 @@
         flex-direction: column;
     }
 
-    section .refTituloAbout{
+    section .refTitulo{
         font-size: 70%;
+    }
+
+
+    section .refSubTitulo{
+        font-size: 50%;
     }
 
     section .refParrafoAbout{
         font-size: 50%;
     }
+
+    section .imgLimit{
+        height: 300px;
+        width: auto;
+    }
+
 }

@@ -30,32 +30,24 @@ router.post('/send-email', urlencodedParser, async (req, res) => {
     const email = req.body.email;
     const texto = req.body.texto;
 
-   //"SMTP",smtpTransport( 
     var transporter = nodemailer.createTransport(smtpTransport({
         service: 'Gmail',
         auth: {
             user: 'martinez022jose@gmail.com',
-            pass: "mataderos32",
-            //xoauth2: xoauth2.createXOAuth2Generator({
-                //type: 'xoauth2',
-                //type: 'OAuth2',
-                
-                //clientId: '228993061492-u4hkahcfau09rp0c15kt62gvqb33tthk.apps.googleusercontent.com',
-                //clientSecret: 'p9DDjHaQRIiowFLgYLzay_o2',
-                //accessToken: 'ya29.a0AfH6SMCWGbsJSsgLZhJSu3z4ofGBQ25kErppmisASlCqnJvW5uIeGDcmCnuTXf40D5QjLhSXMFmwpRsjY1aDp_iAKUOBqegVBYfMzg5SBB2j1bavg7lr7-3cTCHQ03HbXb7XV19EcOfRs6MLopgXy6JjdANDiWgCmnc',
-                //refreshToken: '1//04_gjUi68L0J4CgYIARAAGAQSNwF-L9IrQNOXGQmLq0--3Ch9K1tp7VDHpwgbU2zqJyfA4raN9O0q2J1Fs4qEHuEAf7-db1O-rYQ',
-                
-                
-       
-           // })
+            pass: "xxxxxxxx",
         }
     }));
       
     var mailOptions = {
-        from: "martinez022jose <martinez022jose@gmail.com>",
-        to: email,
+        from: email,
+        to: "martinez022jose@gmail.com",
         subject: "Web concesionaria",
-        text: `mensaje: ${texto} ` 
+        text: 
+        `Nombre: ${nombre},
+         Apellido: ${apellido},
+         Responder a : ${email},
+         Mensaje: ${texto} 
+         ` 
     }
 
     await transporter.sendMail(mailOptions, (error,respuesta) => {
