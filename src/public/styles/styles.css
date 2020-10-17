@@ -88,3 +88,22 @@
     top: 0;
     left: 0;
 }
+
+
+
+@media(max-width:340px){
+    section .columnAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section .refTituloAbout{
+        font-size: 70%;
+    }
+
+    section .refParrafoAbout{
+        font-size: 50%;
+    }
+}
