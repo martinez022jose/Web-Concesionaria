@@ -17,63 +17,63 @@
     <%- include('./parts/nav.html') %>
 
     <!--Comienzo Slider-->
-    <section class="container-fluid bg-ligth">
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid imgLimit" src="/imagenes/home/slider1.jpg">
-                    <div class="carousel-caption d-md-block animated slideInDown">
-                        <h2 class="bg-light colorBlack rounded p-2 text-justify refTitulo widthRef">Lorem ipsum dolor sit amet.</h2>
+    <section class="container-fluid text-center bg-ligth">
+      <div class="row">
+        <div id="carouselExampleIndicators" class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 carousel slide p-0 m-0" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height: 40rem;">
+                <img class="d-block w-100 img-fluid" src="/imagenes/home/slider1.jpg" style="height: 40rem;">
+                <div class="carousel-caption d-md-block animated slideInDown p-5 col-lg-6 col-xl-6 col-md-6 col-sm-9 col-9">
+                    <h2 class="bg-light colorBlack rounded text-justify col-lg-6 col-xl-6 col-md-6 col-sm-9 col-9">Lorem ipsum dolor sit amet.</h2>
 
-                        <p class="text-justify text-light refSubTitulo widthRef">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed quaerat dolores dolor nostrum officiis odit, dolorem iusto eius odio recusandae vero placeat</p>
+                    <p class="text-justify text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed quaerat dolores dolor nostrum officiis odit, dolorem iusto eius odio recusandae vero placeat</p>
 
-                        <a class="btn btn-warning float-left px-3 refSubTitulo" href="#new">Leer..</a>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item relativeClass">
-                    <img class="d-block w-100 img-fluid imgLimit" src="/imagenes/home/slider2.jpg">
-                  </div>
-
-                  <div class="carousel-item relativeClass">
-                    <img class="d-block w-100 img-fluid imgLimit" src="/imagenes/home/slider3.jpg">
-
-                  </div>
+                    <a class="btn btn-warning float-left px-3" href="#new">Leer..</a>
                 </div>
-
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon display-4 zoom" aria-hidden="true"></span>
-                  <span class="sr-only fontFooter">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon zoom" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
-        </div>
+
+              <div class="carousel-item relativeClass">
+                <img class="d-block w-100 img-fluid" src="/imagenes/home/slider2.jpg" style="height: 40rem;">
+              </div>
+
+              <div class="carousel-item relativeClass">
+                <img class="d-block w-100 img-fluid" src="/imagenes/home/slider3.jpg" style="height: 40rem;">
+
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon display-4 zoom" aria-hidden="true"></span>
+              <span class="sr-only fontFooter">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon zoom" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
     </section>
     <!--Fin Slider-->
 
     <!--Sec info-->
-    <section class="container-fluid text-center bg-light my-5" id="new">
+    <section class="container-fluid text-center bg-light" id="new">
            <div class="container">
             <div class="my-5">
               <h1 class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit</h1>
             </div>
 
              <div class="row mb-4">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-12">
                     <img class="img-fluid relativeClass" src="/imagenes/opportunities/new1.jpg">
-                    <p class="fontG absoluteClassLB rounded bg-warning ml-4 p-1" style="width: 70%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                    <p class="fontG absoluteClassLB rounded bg-warning m-5 text-center" style="width: auto;">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-12">
                     <h1 class="pb-4">Lorem ipsum dolor sit</h1>
                     <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
                     <a class="btn btn-warning px-5 float-left" href="#Leer">Leer..</a>
@@ -81,19 +81,19 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-12">
                     <img class="img-fluid" src="/imagenes/opportunities/new1.jpg" style="height:300px;">
                     <h2>Lorem ipsum dolor sit</h2>
                     <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-12">
                   <img class="img-fluid"  src="/imagenes/opportunities/new2.jpg" style="height:300px;">
                   <h2>Lorem ipsum dolor sit</h2>
                   <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-12">
                     <img class="img-fluid" src="/imagenes/opportunities/new3.jpg" style="height:300px;">
                     <h2>Lorem ipsum dolor sit</h2>
                     <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis accusantium? Molestiae modi, facilis ad deleniti eligendi aperiam nesciunt culpa sunt, ab itaque quasi. Eligendi blanditiis in tenetur repellendus nemo?</p>

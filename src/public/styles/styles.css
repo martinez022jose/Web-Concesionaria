@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .colorBlack{
     color:black;
 }
@@ -87,45 +93,4 @@
     position: absolute;
     top: 0;
     left: 0;
-}
-
-/*Definimos las media queris*/
-
-@media(min-width:1024px){
-    section .imgLimit{
-        height: 700px;
-    }
-
-    section .widthRef{
-        width: 40%;
-    }
-
-}
-
-@media(max-width:340px){
-    section .columnAbout{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    section .refTitulo{
-        font-size: 70%;
-    }
-
-
-    section .refSubTitulo{
-        font-size: 50%;
-    }
-
-    section .refParrafoAbout{
-        font-size: 50%;
-    }
-
-    section .imgLimit{
-        height: 300px;
-        width: auto;
-    }
-
 }
